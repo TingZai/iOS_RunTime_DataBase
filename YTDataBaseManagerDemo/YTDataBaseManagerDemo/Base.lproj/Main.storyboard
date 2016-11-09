@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="8Rq-7s-c9X">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="yfu-3O-88L">
+            <objects>
+                <navigationController id="8Rq-7s-c9X" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="AKg-7T-q6J">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="45b-bT-fw7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1nK-7h-X2y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-349" y="297"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kue-XM-ASp">
+                                <rect key="frame" x="57" y="330" width="261" height="56"/>
+                                <color key="backgroundColor" red="1" green="0.94311610950000002" blue="0.27400974030000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="创建一个Dog对象"/>
+                                <connections>
+                                    <action selector="makeDog:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GvM-Kw-TbJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jlt-4c-Bvy">
+                                <rect key="frame" x="53" y="209" width="146" height="44"/>
+                                <color key="backgroundColor" red="0.42352941179999998" green="0.81960784310000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="显示Person列表"/>
+                                <connections>
+                                    <segue destination="77J-0J-vZb" kind="push" identifier="person" id="g6c-ak-3Jv"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="au9-0z-ybt">
+                                <rect key="frame" x="57" y="394" width="261" height="59"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lJd-9f-6kj">
+                                <rect key="frame" x="53" y="461" width="146" height="44"/>
+                                <color key="backgroundColor" red="0.42352941179999998" green="0.81960784310000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="显示Person列表"/>
+                                <connections>
+                                    <segue destination="77J-0J-vZb" kind="push" identifier="dog" id="LW8-gp-MHC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0pT-p7-lWG">
+                                <rect key="frame" x="53" y="83" width="261" height="56"/>
+                                <color key="backgroundColor" red="1" green="0.94311610950000002" blue="0.27400974030000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="创建一个Person对象"/>
+                                <connections>
+                                    <action selector="makePerson:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f91-TO-C43"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ozv-CH-XVb">
+                                <rect key="frame" x="53" y="147" width="261" height="59"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="247-Ll-3gH"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="dogInfo" destination="au9-0z-ybt" id="eWa-b7-WKc"/>
+                        <outlet property="personInfo" destination="ozv-CH-XVb" id="cB6-cg-Xkw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="204.5" y="324.5"/>
+        </scene>
+        <!--Show Data View Controller-->
+        <scene sceneID="RT5-Gu-RWD">
+            <objects>
+                <viewController id="77J-0J-vZb" customClass="ShowDataViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="A0F-wx-Ft3"/>
+                        <viewControllerLayoutGuide type="bottom" id="uWr-GJ-1Ye"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nk1-VU-EEG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HWK-EV-qFD">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="77J-0J-vZb" id="FhM-2Q-3Qg"/>
+                                    <outlet property="delegate" destination="77J-0J-vZb" id="nFg-DY-5wm"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HWK-EV-qFD" firstAttribute="top" secondItem="A0F-wx-Ft3" secondAttribute="bottom" id="3mr-oE-HeM"/>
+                            <constraint firstItem="HWK-EV-qFD" firstAttribute="leading" secondItem="nk1-VU-EEG" secondAttribute="leading" id="8jC-S5-dJ2"/>
+                            <constraint firstAttribute="trailing" secondItem="HWK-EV-qFD" secondAttribute="trailing" id="nbd-SU-5X1"/>
+                            <constraint firstItem="uWr-GJ-1Ye" firstAttribute="top" secondItem="HWK-EV-qFD" secondAttribute="bottom" id="xEe-0z-30G"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="LlA-T3-hSB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eqk-eE-ng2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="718.5" y="324.5"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="g6c-ak-3Jv"/>
+    </inferredMetricsTieBreakers>
+</document>
